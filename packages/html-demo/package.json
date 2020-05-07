@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "HTML Demo",
   "scripts": {
-    "start": "http-server --port 80 --gzip"
+    "start": "ws --port 80 --log.format dev --compress --open"
   },
   "devDependencies": {
     "@ferranvila/stencil-components": "0.0.1",
-    "http-server": "^0.12.3"
+    "local-web-server": "^4.0.0"
   }
 }
