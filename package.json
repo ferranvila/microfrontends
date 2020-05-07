@@ -23,6 +23,11 @@
     "clean": "rimraf **/node_modules **/package-lock.json **/dist **/loader **/www",
     "build": "lerna run --stream build",
     "test": "lerna run --stream test",
+    "----- STENCIL COMPONENTS -----": "------------------------------------------------------------",
+    "stencil:build": "lerna run --scope @ferranvila/stencil-components --stream build",
+    "stencil:start": "lerna run --scope @ferranvila/stencil-components --stream start",
+    "stencil:test": "lerna run --scope @ferranvila/stencil-components --stream test",
+    "stencil:test.watch": "lerna run --scope @ferranvila/stencil-components --stream test.watch"
   },
   "husky": {
     "hooks": {
