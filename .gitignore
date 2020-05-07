@@ -1,6 +1,11 @@
+# IDE
+*.sublime-project
+*.sublime-workspace
+
 # Logs
 logs
 *.log
+log.txt
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -82,6 +87,11 @@ typings/
 .nuxt
 dist
 
+# Stencil build output
+www
+loader
+.stencil
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and *not* Next.js
@@ -102,3 +112,18 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Others
+*~
+*.sw[mnpcod]
+*.lock
+*.tmp
+*.tmp.*
+.sass-cache/
+.versions/
+node_modules/
+$RECYCLE.BIN/
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+.env

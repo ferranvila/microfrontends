@@ -18,6 +18,12 @@
     "url": "https://github.com/ferranvila/microfrontends/issues"
   },
   "homepage": "https://github.com/ferranvila/microfrontends#readme",
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "clean": "rimraf **/node_modules **/package-lock.json **/dist **/loader **/www",
+    "build": "lerna run --stream build",
+    "test": "lerna run --stream test",
+  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
@@ -30,6 +36,7 @@
     "husky": "^4.2.5",
     "lerna": "^3.20.2",
     "prettier": "2.0.5",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.1",
+    "rimraf": "^3.0.2"
   }
 }
