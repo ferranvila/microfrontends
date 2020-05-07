@@ -23,6 +23,7 @@
     "clean": "rimraf **/node_modules **/package-lock.json **/dist **/loader **/www",
     "build": "lerna run --stream build",
     "test": "lerna run --stream test",
+    "publish": "lerna publish --yes",
     "--------- HTML DEMO ----------": "------------------------------------------------------------",
     "html:start": "lerna run --scope @ferranvila/html-demo --stream start",
     "----- STENCIL COMPONENTS -----": "------------------------------------------------------------",

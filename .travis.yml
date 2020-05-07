@@ -4,3 +4,16 @@ node_js:
 script:
   - npm run build
   - npm run test
+before_deploy:
+  - git config --global user.email ${GITHUB_EMAIL}
+  - git config --global user.name ${GITHUB_USER}
+  - git remote set-url origin "https://${GITHUB_TOKEN}@github.com/ferranvila/microfrontends.git" > /dev/null 2>&1
+  - git checkout master
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
+deploy:
+  provider: script
+  script: 'npm run publish'
+  skip_cleanup: true
+  on:
+    node: '12'
+    branch: master
