@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/ferranvila/microfrontends/compare/@ferranvila/stencil-components@0.3.0...@ferranvila/stencil-components@0.4.0) (2020-05-08)
+
+
+### Features
+
+* **stencil-components:** update component color to force republication ([1a74583](https://github.com/ferranvila/microfrontends/commit/1a7458320b16ff8e613066567412a3c8ddafed1c))
+
+
+
+
+
 # [0.3.0](https://github.com/ferranvila/microfrontends/compare/@ferranvila/stencil-components@0.2.0...@ferranvila/stencil-components@0.3.0) (2020-05-08)
 
 
