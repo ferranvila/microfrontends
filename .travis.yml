@@ -10,6 +10,7 @@ before_deploy:
   - git remote set-url origin "https://${GITHUB_TOKEN}@github.com/ferranvila/microfrontends.git" > /dev/null 2>&1
   - git checkout master
   - echo "//registry.npmjs.com/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
+  - cat $HOME/.npmrc
 deploy:
   provider: script
   script: 'npm run publish'
