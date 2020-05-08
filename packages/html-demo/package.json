@@ -1,12 +1,12 @@
 {
   "name": "@ferranvila/html-demo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "HTML Demo",
   "scripts": {
     "start": "ws --port 80 --log.format dev --compress --open"
   },
   "devDependencies": {
-    "@ferranvila/stencil-components": "^0.1.0",
+    "@ferranvila/stencil-components": "^0.2.0",
     "local-web-server": "^4.0.0"
   }
 }
